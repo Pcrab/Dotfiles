@@ -1,0 +1,10 @@
+[user]
+	name = Pcrab
+	email = pcrab@pcrab.xyz
+	signingkey = 80068A4F641F0F73
+[http]
+	proxy = http://127.0.0.1:7890
+[https]
+	proxy = http://127.0.0.1:7890
+[commit]
+	gpgsign = true
