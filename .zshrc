@@ -57,8 +57,6 @@ zi wait lucid light-mode depth"1" for \
     blockf has'git' atload'export GPG_TTY=$(tty)' \
         OMZL::git.zsh \
         OMZP::git \
-    blockf has'code' \
-        OMZP::vscode \
     z-shell/zzcomplete \
 
 zi wait'1' lucid light-mode depth"1" for \
