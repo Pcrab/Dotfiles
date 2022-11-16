@@ -49,6 +49,7 @@ zstyle ":history-search-multi-word" page-size "11"
 zstyle ':completion:*' menu select
 
 # ZI
+fpath+=~/.zfunc
 zi wait lucid light-mode depth"1" for \
     atinit"ZI[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
         z-shell/F-Sy-H \
