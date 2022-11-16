@@ -1,5 +1,10 @@
-#!/bin/sh
-hostip=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
+#!/usr/bin/env zsh
+if [[ `uname -a | grep -qi wsl && echo wsl` == "wsl" ]]; then
+    hostip=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
+else
+    hostip="127.0.0.1"
+fi
+
 port=7890
 
 PROXY_HTTP="http://${hostip}:${port}"
