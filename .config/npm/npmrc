@@ -1,7 +1,7 @@
-prefix=/Users/pangxw/.local/share/npm
-cache=/Users/pangxw/.cache/npm
-init-module=/Users/pangxw/.config/npm/config/npm-init.js
-store-dir=/Users/pangxw/.local/share/pnpm-store
+prefix=$HOME/.local/share/npm
+cache=$HOME/.cache/npm
+init-module=$HOME/.config/npm/config/npm-init.js
+store-dir=$HOME/.local/share/pnpm-store
 registry=https://registry.npmjs.org/
 electron_mirror=https://npm.taobao.org/mirrors/electron/
 //registry.npmjs.org/:_authToken=$TOKEN
