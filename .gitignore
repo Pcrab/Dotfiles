@@ -1,2 +1,6 @@
 /.cfg
+/.ssh/config.d/hosts
+/.ssh/config.d/hosts
+/.ssh/config.d/hosts
+/.ssh/config.d/hosts
 /.zsh/npm.zsh
