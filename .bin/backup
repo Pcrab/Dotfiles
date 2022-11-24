@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+recipientName="pcrab"
+
+cfg="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+
+encryptFile () {
+    echo "Backing up $1 ..."
+    gpg -a --yes -r $recipientName -e $1
+    $cfg add $1.asc
+
+    if ! grep -qx /$1 $HOME/.gitignore; then
+        relaPath=`realpath --relative-to=$HOME $1`
+        echo /$relaPath >> $HOME/.gitignore
+    fi
+    echo "Backup $1 finished."
+    echo ""
+}
+
+for filePath in "$@"
+do
+    if test -f "$filePath"; then
+        encryptFile $filePath
+    else
+        echo "$filePath is not a valid file"
+    fi
+done
+
+sort -o $HOME/.gitignore $HOME/.gitignore
