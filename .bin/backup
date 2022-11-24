@@ -27,3 +27,4 @@ do
 done
 
 sort -o $HOME/.gitignore $HOME/.gitignore
+cfg add $HOME/.gitignore
