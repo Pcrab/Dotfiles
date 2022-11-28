@@ -11,3 +11,4 @@ alias cfg='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
 
+alias cr='clear; reset'
